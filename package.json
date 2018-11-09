@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && tap --cov test",
+    "lint": "standard"
   },
   "keywords": [],
   "author": "Aaron Jewell",
@@ -16,5 +17,16 @@
     "url": "https://github.com/jewella/hsl-to-hex/issues"
   },
   "homepage": "https://github.com/jewella/hsl-to-hex#readme",
-  "description": ""
+  "description": "Convert HSL colors to RGB colors in hex format.",
+  "dependencies": {
+    "debug": "^4.1.0",
+    "hsl-to-rgb-for-reals": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tap": "^12.0.1"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
