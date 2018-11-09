@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm ls && npm test",
     "test": "npm run lint && tap --cov test",
     "lint": "standard"
   },
